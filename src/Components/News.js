@@ -158,7 +158,6 @@ const News = (props) => {
           <NewsItem title="myTitle" description="myDesc"/>
         </div>
         </div> */}
-
 {/*We created a previous as well as next button but hten replced it with infinite scroll*/}
       {/* <div className="container d-flex justify-content-between my-4">
           <button
