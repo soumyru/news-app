@@ -1,10 +1,19 @@
 import React from "react";
 
 const NewsItem = (props) => {
-  let { title, description, imageUrl, newsUrl, author, date, source } = props;
+  let { title, description, imageUrl, newsUrl, author, date, source } = props; //obtaining the LHS as props from News component
   return (
     <>
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card" style={{ width: "18rem"}}>
+      {/* <img
+          src="https://www.axios.com/2024/05/07/charted-bird-flu-transmission"
+          className="card-img-top"
+          alt="..."
+        /> */} 
+
+        {/*Instead of hard coding src link for each and every news card, we will send the image url in a variable names imageUrl
+        Like below...*/}
+
         <img
           src={
             !imageUrl
@@ -18,7 +27,7 @@ const NewsItem = (props) => {
           <h5 className="card-title">{title}...</h5>
           <span
             className="position-absolute top-0  translate-middle badge rounded-pill bg-danger"
-            style={{ left: "924e5rr54%", zIndex: "1" }}
+            style={{ left: "9%", zIndex: "1" }}
           >
             {source}
             <span className="visually-hidden">unread messages</span>
@@ -34,7 +43,7 @@ const NewsItem = (props) => {
             href={newsUrl}
             rel="noreferrer"
             target="_blank"
-            className="btn btn-sm btn-primary"
+            className="btn btn-sm btn-dark"
           >
             Read More
           </a>

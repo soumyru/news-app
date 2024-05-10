@@ -1,16 +1,29 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 import Navbar from "./Components/Navbar";
 import News from "./Components/News";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-const App = () => {
+//commented part is the class based component way to code this app
+// import React, {Component} from 'react'; 
+/* export default class App extends Component{
   const pageSize = 5;
-  const [progress, setProgress] = useState(0);
+  state={
+    progress=0;
+  };
+   setProgress = (progress) => {
+    this.setProgress({progress:progress});
+  };
+  render(){
+    return(
+      ...
+    )
+  }
+}*/
 
-  // const setProgress = (progress) => {
-  //   setProgress(progress);
-  // };
+//function based component
+const App = () => {
+  const [progress, setProgress] = useState(0);
 
   return (
     <div>
@@ -18,9 +31,9 @@ const App = () => {
         <Navbar />
 
         <LoadingBar
-          color="#1f1ce6"
+          color="#ce1616"
           progress={progress}
-          height={4}
+          height={3}
           onLoaderFinished={() => setProgress(progress)}
         />
 
