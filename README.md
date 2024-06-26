@@ -1,4 +1,4 @@
-![image](https://github.com/soumyru/news-app/assets/95014925/1803cf78-68f3-4edd-ab21-45a8d76636dd)
+![Screenshot (1128)](https://github.com/soumyru/news-app/assets/95014925/0138ee76-5da7-4bb5-bf41-e464f68a2742)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
